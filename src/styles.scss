@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --bg: #757575;
+  --white: #fff;
+  --navbar-heigth: 60px;
+  --sidebar-width-show: 240px;
+  --sidebar-width-hide: 72px;
+  --bg-navbar: rgba(75, 75, 75, 0.98);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--white);
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}

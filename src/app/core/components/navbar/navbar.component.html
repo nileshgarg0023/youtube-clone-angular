@@ -1,0 +1,48 @@
+<nav class="navbar">
+  <div class="navbar__start">
+    <button class="menu-icon" (click)="changeMenu()">
+      <app-icon>
+        <img src="assets/images/menu.svg" alt="Menu" />
+      </app-icon>
+    </button>
+    <picture class="menu-logo">
+      <img width="90" src="assets/images/logo.svg" alt="Logo" />
+    </picture>
+  </div>
+
+  <div class="navbar__seeker">
+    <div class="navbar__seeker-input">
+      <input type="text" placeholder="Search" />
+      <button class="navbar__seeker-search">
+        <app-icon>
+          <img src="assets/images/search.svg" alt="Search" />
+        </app-icon>
+      </button>
+    </div>
+    <button class="navbar__seeker-microphone">
+      <app-icon>
+        <img src="assets/images/microphone.svg" alt="Microphone" />
+      </app-icon>
+    </button>
+  </div>
+
+  <div class="navbar__options">
+    <button>
+      <app-icon>
+        <img src="assets/images/video.svg" alt="Video" />
+      </app-icon>
+    </button>
+
+    <button>
+      <app-icon>
+        <img src="assets/images/grid-options.svg" alt="Grid options" />
+      </app-icon>
+    </button>
+
+    <button>
+      <app-icon>
+        <img src="assets/images/bell.svg" alt="Bell" />
+      </app-icon>
+    </button>
+  </div>
+</nav>

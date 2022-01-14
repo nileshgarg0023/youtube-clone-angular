@@ -1,0 +1,7 @@
+#content {
+  margin-left: var(--sidebar-width-show);
+
+  &.hide {
+    margin-left: var(--sidebar-width-hide);
+  }
+}

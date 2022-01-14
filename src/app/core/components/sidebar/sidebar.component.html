@@ -1,0 +1,23 @@
+<div id="sidebar" [class.hide]="!(isVisible$ | async)">
+  <ng-container *ngFor="let section of menu">
+    <ul
+      *ngIf="!(isVisible$ | async) ? section.mustShowInHide : true"
+      class="section"
+    >
+      <h3 *ngIf="section.section">{{ section.section }}</h3>
+      <ng-container *ngFor="let item of section.items">
+        <li
+          (click)="itemSelected = item"
+          *ngIf="!(isVisible$ | async) ? item.renderInHide : true"
+          [ngClass]="{
+            selected: itemSelected === item,
+            showInHide: item.renderInHide
+          }"
+        >
+          <app-icon><img [src]="item.icon" [alt]="item.name" /></app-icon>
+          <span>{{ item.name }}</span>
+        </li>
+      </ng-container>
+    </ul>
+  </ng-container>
+</div>

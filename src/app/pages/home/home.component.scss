@@ -1,0 +1,12 @@
+:host {
+  width: 100%;
+}
+
+.home {
+  padding: 25px;
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(325px, auto));
+    gap: 25px;
+  }
+}

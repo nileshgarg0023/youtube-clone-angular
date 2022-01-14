@@ -1,0 +1,11 @@
+:host {
+  fill: var(--white);
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  i {
+    width: inherit;
+    height: inherit;
+    display: inline-block;
+  }
+}
